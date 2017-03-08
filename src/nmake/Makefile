@@ -3,7 +3,7 @@ FC = ifort
 # FFLAGS  - Fortran compiler flags
 # LDFLAGS - Linking flags
 FPPFLAGS =
-FFLAGS   = /nologo /O2 /fpe:0 /fp:strict /traceback
+FFLAGS   = /nologo /O2 /fp:strict /traceback /assume:minus0
 LDFLAGS = 
 
 F_DIR = ..
