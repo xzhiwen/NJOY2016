@@ -1,0 +1,144 @@
+name:
+    njoy2016 baseline
+
+# code running settings
+py_exe:
+    \\albert\Home\zxu\python-3.4.2.amd64\python.exe -m nepr.run_exe
+exe:
+    \\albert\Home\zxu\code\NJOY2016\bin\njoy2016_01.exe
+host:
+    edward
+req_type:
+    core
+max_num_nodes:
+    2
+workdir:
+    \\albert\Home\zxu\code\NJOY2016\vnv\base
+env:
+    - PYTHONPATH=\\albert\Home\zxu\code\NEPR\bin\nepr.zip
+
+# test inputs directory (inputs to be copied to workdir)
+test_inp_dir: null
+
+# reference results directory (for comparison)
+ref_out_dir: null
+
+# suite of cases
+suite:
+    # list of dict, whose keys can include
+    #   name    = case basename (required)
+    #   koda    = code running command-line arguments (--koda option)
+    #   kodi    = code running input stream (--kodi option)
+    #   kodo    = code running output stream (--kodo option)
+    #   env     = environment variables (--env option)
+    #   inp     = aux inputs (--inp option)
+    #   out     = aux outputs (--out option)
+    #   depends = dependency case names
+    # Note that only "name" is required.
+
+    - name: case01
+      kodo: output
+      inp : tape20=t511 tape26=t322
+      out : tape25=tape25
+
+    - name: case02
+      kodo: output
+      inp : tape20=t404
+      out : tape28=tape28
+
+    - name: case03
+      kodo: output
+      inp : tape30=gam23 tape32=gam27
+      out : tape37=tape37
+
+    - name: case04
+      kodo: output
+      inp : tape20=t511
+      out : tape23=tape23 tape24=tape24 tape25=tape25
+
+    - name: case05
+      kodo: output
+      inp : tape30=t511
+      out : tape33=tape33 tape34=tape34 tape35=tape35
+
+    - name: case06
+      kodo: output
+      inp : tape30=t511
+      out : tape32=tape32
+
+    - name: case07
+      kodo: output
+      inp : tape20=t511
+      out : tape26=tape26 tape28=tape28
+
+    - name: case08
+      kodo: output
+      inp : tape20=eni61
+      out : tape28=tape28
+
+    - name: case09
+      kodo: output
+      inp : tape20=t511
+      out : tape24=tape24
+
+    - name: case10
+      kodo: output
+      inp : tape20=t404
+      out : tape26=tape26 tape28=tape28
+
+    - name: case11
+      kodo: output
+      inp : tape20=t404
+      out : tape27=tape27
+
+    - name: case12
+      kodo: output
+      inp : tape20=eni61
+      out : tape22=tape22 tape24=tape24
+
+    - name: case13
+      kodo: output
+      inp : tape20=eni61
+      out : tape26=tape26 tape28=tape28 tape36=tape36
+
+    - name: case14
+      kodo: output
+      inp : tape20=epn14 tape21=epn14
+      out : tape31=tape31 tape36=tape36
+
+    - name: case15
+      kodo: output
+      inp : tape20=J33U238
+      out : >-
+            tape25=tape25 tape26=tape26 tape27=tape27
+            tape35=tape35 tape36=tape36 tape37=tape37
+            tape45=tape45 tape46=tape46 tape47=tape47
+            tape91=tape91
+
+    - name: case16
+      kodo: output
+      inp : tape20=J33U238
+      out : >-
+            tape26=tape26 tape27=tape27
+            tape36=tape36 tape37=tape37
+            tape46=tape46 tape47=tape47
+
+    - name: case17
+      kodo: output
+      inp : tape21=J33U238 tape22=J33U235 tape23=J33Pu239
+      out : tape26=tape26 tape91=tape91 tape92=tape92 tape93=tape93 tape99=tape99
+
+    - name: case18
+      kodo: output
+      inp : tape20=DCf252
+      out : tape28=tape28 tape38=tape38 tape39=tape39 tape91=tape91
+
+    - name: case19
+      kodo: output
+      inp : tape20=e6pu241c
+      out : tape27=tape27 tape29=tape29
+
+    - name: case20
+      kodo: output
+      inp : tape20=cl35rml
+      out : tape23=tape23 tape27=tape27
