@@ -2,10 +2,10 @@
 Microsoft (R) Program Maintenance Utility Version 12.00.21005.1
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\locale.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\mainio.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\util.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\endf.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\locale.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\mainio.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\util.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\endf.f90
 ..\endf.f90(56): remark #8577: The scale factor (k) and number of fractional digits (d) do not have the allowed combination of either -d < k <= 0 or 0 < k < d+2. Expect asterisks as output.
       read(nin,'(6e11.0,i4,i2,i3,i5)') (a(i),i=1,6),math,mfh,mth,nsp
 ----------------------^
@@ -15,29 +15,29 @@ Copyright (C) Microsoft Corporation.  All rights reserved.
 ..\endf.f90(852): remark #8577: The scale factor (k) and number of fractional digits (d) do not have the allowed combination of either -d < k <= 0 or 0 < k < d+2. Expect asterisks as output.
       read(nin,'(6e11.0,i4,i2,i3,i5)') ah,math,mfh,mth,nsp
 ----------------------^
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\mathm.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\phys.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\acecm.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\acedo.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\mathm.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\phys.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\acecm.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\acedo.f90
 ..\acedo.f90(342): remark #8577: The scale factor (k) and number of fractional digits (d) do not have the allowed combination of either -d < k <= 0 or 0 < k < d+2. Expect asterisks as output.
          read (nin,'(4e20.0)') (xss(l+j),j=1,4)
 --------------------------^
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\acefc.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\acefc.f90
 ..\acefc.f90(2667): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
    if (abs(1-sum).gt.test) write(nsyso,'(&
 ------------------------------------------^
 ..\acefc.f90(13996): remark #8577: The scale factor (k) and number of fractional digits (d) do not have the allowed combination of either -d < k <= 0 or 0 < k < d+2. Expect asterisks as output.
          read (nin,'(4e20.0)') (xss(l+j),j=1,4)
 --------------------------^
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\acepa.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\acepa.f90
 ..\acepa.f90(317): remark #8577: The scale factor (k) and number of fractional digits (d) do not have the allowed combination of either -d < k <= 0 or 0 < k < d+2. Expect asterisks as output.
          read (nin,'(4e20.0)') (xss(l+j),j=1,4)
 --------------------------^
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\acepn.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\acepn.f90
 ..\acepn.f90(1632): remark #8577: The scale factor (k) and number of fractional digits (d) do not have the allowed combination of either -d < k <= 0 or 0 < k < d+2. Expect asterisks as output.
          read (nin,'(4e20.0)') (xss(l+j),j=1,4)
 --------------------------^
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\aceth.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\aceth.f90
 ..\aceth.f90(551): remark #8577: The scale factor (k) and number of fractional digits (d) do not have the allowed combination of either -d < k <= 0 or 0 < k < d+2. Expect asterisks as output.
            '(a10,e12.0,e12.0,1x,a10/a70,a10)')&
 ---------------------^
@@ -56,19 +56,19 @@ Copyright (C) Microsoft Corporation.  All rights reserved.
 ..\aceth.f90(658): remark #8290: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+3'.
       write(hz,'(a6,f4.3,''nt '')') tname,suff
 ---------------------^
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\acer.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\broadr.f90
-..\broadr.f90(611): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\acer.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\broadr.f90
+..\broadr.f90(615): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
       write(nsyse,'(1p,e11.3,'' deg ('',e9.3,'' eV)'',39x,&
 ---------------------------------------^
-..\broadr.f90(1644): remark #8290: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+3'.
+..\broadr.f90(1670): remark #8290: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+3'.
       write(strng,'(''broadening truncated at a='',f3.1)') aamin
 --------------------------------------------------^
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\ccccr.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\covr.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\dtfr.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\samm.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\errorr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\ccccr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\covr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\dtfr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\samm.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\errorr.f90
 ..\errorr.f90(8861): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
                if (tempin.ne.zero) write(nsyso,'(/&
 ---------------------------------------------------^
@@ -81,33 +81,33 @@ Copyright (C) Microsoft Corporation.  All rights reserved.
 ..\errorr.f90(11290): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
       write(strng,'("can''t find tempin = ",1pe10.4,&
 ----------------------------------------------^
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\gaminr.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\gaspr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\gaminr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\gaspr.f90
 ..\gaspr.f90(866): remark #8290: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+3'.
      write(nsyso,'(i8,5(4x,f3.1))') mth,y203,y204,y205,y206,y207
 ----------------------------^
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\graph.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\groupr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\graph.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\groupr.f90
 ..\groupr.f90(760): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
          if (tempin.ne.0) write(nsyso,'(&
 -----------------------------------------^
 ..\groupr.f90(792): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
          if (econst.gt.zero) write(nsyso,'(/&
 ---------------------------------------------^
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\heatr.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\leapr.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\matxsr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\heatr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\leapr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\matxsr.f90
 ..\matxsr.f90(2381): remark #8577: The scale factor (k) and number of fractional digits (d) do not have the allowed combination of either -d < k <= 0 or 0 < k < d+2. Expect asterisks as output.
    read(nin,'(6e11.0)') (a(i+nw1),i=1,lim)
 -------------------^
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\mixr.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\moder.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\plotr.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\powr.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\purr.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\reconr.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\resxsr.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\thermr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\mixr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\moder.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\plotr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\powr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\purr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\reconr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\resxsr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\thermr.f90
 ..\thermr.f90(257): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
    write(nsyso,'(&
 ------------------^
@@ -138,19 +138,19 @@ Copyright (C) Microsoft Corporation.  All rights reserved.
 ..\thermr.f90(281): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
          if (ntemp.gt.1) write(nsyso,'(40x,1p,e10.4)')&
 -----------------------------------------------^
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\unresr.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\vers.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\viewr.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\wimsr.f90
-	ifort /nologo /O2 /fp:strict /traceback /assume:minus0 /c ..\main.f90
-	ifort /exe:njoy2016_01.exe acecm.obj acedo.obj acefc.obj acepa.obj acepn.obj acer.obj aceth.obj broadr.obj ccccr.obj covr.obj dtfr.obj endf.obj  errorr.obj gaminr.obj gaspr.obj graph.obj groupr.obj heatr.obj leapr.obj locale.obj mainio.obj mathm.obj  matxsr.obj mixr.obj moder.obj phys.obj plotr.obj powr.obj purr.obj reconr.obj resxsr.obj samm.obj thermr.obj  unresr.obj util.obj vers.obj viewr.obj wimsr.obj main.obj 
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\unresr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\vers.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\viewr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\wimsr.f90
+	ifort /nologo /O2 /fpe:0 /fp:strict /traceback /assume:minus0 /c ..\main.f90
+	ifort /exe:njoy2016_15.exe acecm.obj acedo.obj acefc.obj acepa.obj acepn.obj acer.obj aceth.obj broadr.obj ccccr.obj covr.obj dtfr.obj endf.obj  errorr.obj gaminr.obj gaspr.obj graph.obj groupr.obj heatr.obj leapr.obj locale.obj mainio.obj mathm.obj  matxsr.obj mixr.obj moder.obj phys.obj plotr.obj powr.obj purr.obj reconr.obj resxsr.obj samm.obj thermr.obj  unresr.obj util.obj vers.obj viewr.obj wimsr.obj main.obj 
 Intel(R) Visual Fortran Intel(R) 64 Compiler XE for applications running on Intel(R) 64, Version 14.0.3.202 Build 20140422
 Copyright (C) 1985-2014 Intel Corporation.  All rights reserved.
 
 Microsoft (R) Incremental Linker Version 12.00.21005.1
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
--out:njoy2016_01.exe 
+-out:njoy2016_15.exe 
 -subsystem:console 
 acecm.obj 
 acedo.obj 
@@ -197,4 +197,4 @@ main.obj
 //
 		MD5				SHA-1
 -------------------------------------------------------------------------
-0fd0b9221017ab22b8b5eed66d5c11f3 aeb3199ab532ce619abfdff833447b7aac55f222 njoy2016_01.exe
+ad4d7f0ccb1c2e0b1572ec236d41a39e 8721400849be4cf138720e05c53eb4f903593b98 njoy2016_15.exe
