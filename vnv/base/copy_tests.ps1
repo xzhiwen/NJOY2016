@@ -2,10 +2,10 @@
 del inp\*, out\*
 
 # copy ENDF data files
-copy  ..\..\test\resources\*  inp
+copy  ..\..\tests\resources\*  inp
 
 # loop through case directories under test
-foreach($caseDir in $(Get-ChildItem ..\..\test\?? -Directory))
+foreach($caseDir in $(Get-ChildItem ..\..\tests\?? -Directory))
 {
     $input = Join-Path $caseDir.FullName 'input'
     $caseInp = Join-Path 'inp' ('case' + $caseDir.BaseName + '.inp')
