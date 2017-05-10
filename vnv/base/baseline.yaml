@@ -5,7 +5,7 @@ name:
 py_exe:
     \\albert\Home\zxu\python-3.4.2.amd64\python.exe -m nepr.run_exe
 exe:
-    \\albert\Home\zxu\code\NJOY2016\bin\njoy2016_01.exe
+    \\albert\Home\zxu\code\NJOY2016\bin\njoy2016.exe
 host:
     edward
 req_type:
@@ -142,3 +142,8 @@ suite:
       kodo: output
       inp : tape20=cl35rml
       out : tape23=tape23 tape27=tape27
+
+    - name: case21
+      kodo: output
+      inp : tape20=n-026_Fe_058-ENDF8.0-Beta4.endf
+      out : tape24=tape24

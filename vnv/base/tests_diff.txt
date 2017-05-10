@@ -1,0 +1,25 @@
+--- \\albert\Home\zxu\code\NJOY2016\vnv\base\case07.tape26	Wed May 10 10:40:57 2017
++++ C:\xu\code\NJOY2016\vnv\base\out\case07.tape26	Tue May  9 17:15:21 2017
+@@ -1 +1 @@
+- 92235.00c  233.025000  2.5852E-08   05/10/17
++ 92235.00c  233.025000  2.5852E-08   01/11/17
+--- \\albert\Home\zxu\code\NJOY2016\vnv\base\case10.tape26	Wed May 10 10:41:25 2017
++++ C:\xu\code\NJOY2016\vnv\base\out\case10.tape26	Tue May  9 17:15:21 2017
+@@ -1 +1 @@
+- 94238.00c  236.167000  2.5852E-08   05/10/17
++ 94238.00c  236.167000  2.5852E-08   01/11/17
+--- \\albert\Home\zxu\code\NJOY2016\vnv\base\case13.tape26	Wed May 10 10:40:58 2017
++++ C:\xu\code\NJOY2016\vnv\base\out\case13.tape26	Tue May  9 17:15:21 2017
+@@ -1 +1 @@
+- 28061.00c   60.408000  2.5852E-08   05/10/17
++ 28061.00c   60.408000  2.5852E-08   01/26/17
+--- \\albert\Home\zxu\code\NJOY2016\vnv\base\case14.tape31	Wed May 10 10:40:58 2017
++++ C:\xu\code\NJOY2016\vnv\base\out\case14.tape31	Tue May  9 17:15:21 2017
+@@ -1 +1 @@
+-  7014.00h   13.882780  0.0000E+00   05/10/17
++  7014.00h   13.882780  0.0000E+00   01/26/17
+--- \\albert\Home\zxu\code\NJOY2016\vnv\base\case19.tape27	Wed May 10 10:41:58 2017
++++ C:\xu\code\NJOY2016\vnv\base\out\case19.tape27	Tue May  9 17:15:20 2017
+@@ -1 +1 @@
+- 94241.00c  238.978000  2.5301E-08   05/10/17
++ 94241.00c  238.978000  2.5301E-08   01/26/17
